@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="CountrySelector" id="uSo-k7-i7n" customClass="CountrySelector">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gXG-kd-E3M">
+                    <rect key="frame" x="20" y="60" width="335" height="567"/>
+                    <subviews>
+                        <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="RM5-sh-j6K">
+                            <rect key="frame" x="3" y="3" width="286" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="Pih-1k-aYU"/>
+                            </constraints>
+                            <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4vj-Uz-Lpa">
+                            <rect key="frame" x="0.0" y="41" width="335" height="526"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkH-Lg-RuH">
+                            <rect key="frame" x="294" y="0.0" width="41" height="41"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="Close">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="closeCountrySelector:" destination="uSo-k7-i7n" eventType="touchUpInside" id="gLa-YL-Heh"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="4vj-Uz-Lpa" firstAttribute="top" secondItem="RM5-sh-j6K" secondAttribute="bottom" constant="3" id="105-qg-aH6"/>
+                        <constraint firstItem="RM5-sh-j6K" firstAttribute="top" secondItem="gXG-kd-E3M" secondAttribute="top" constant="3" id="1Ta-0t-Zzc"/>
+                        <constraint firstAttribute="trailing" secondItem="rkH-Lg-RuH" secondAttribute="trailing" id="53w-nT-ePw"/>
+                        <constraint firstItem="4vj-Uz-Lpa" firstAttribute="top" secondItem="rkH-Lg-RuH" secondAttribute="bottom" id="PpC-p4-UTh"/>
+                        <constraint firstItem="rkH-Lg-RuH" firstAttribute="top" secondItem="gXG-kd-E3M" secondAttribute="top" id="QyF-d9-KEr"/>
+                        <constraint firstItem="rkH-Lg-RuH" firstAttribute="top" secondItem="gXG-kd-E3M" secondAttribute="top" id="TaG-8q-8mR"/>
+                        <constraint firstAttribute="trailing" secondItem="4vj-Uz-Lpa" secondAttribute="trailing" id="Vd3-aD-CS0"/>
+                        <constraint firstAttribute="bottom" secondItem="4vj-Uz-Lpa" secondAttribute="bottom" id="hCI-On-ZAJ"/>
+                        <constraint firstAttribute="trailing" secondItem="rkH-Lg-RuH" secondAttribute="trailing" id="kqt-FO-xbD"/>
+                        <constraint firstItem="rkH-Lg-RuH" firstAttribute="leading" secondItem="RM5-sh-j6K" secondAttribute="trailing" constant="5" id="o2z-BW-cuu"/>
+                        <constraint firstItem="RM5-sh-j6K" firstAttribute="leading" secondItem="gXG-kd-E3M" secondAttribute="leading" constant="3" id="vTr-Pt-SES"/>
+                        <constraint firstItem="4vj-Uz-Lpa" firstAttribute="leading" secondItem="gXG-kd-E3M" secondAttribute="leading" id="zjj-R7-GGm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.66909605705436248" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gXG-kd-E3M" firstAttribute="top" secondItem="uSo-k7-i7n" secondAttribute="top" constant="60" id="7mN-Dt-6dP"/>
+                <constraint firstItem="gXG-kd-E3M" firstAttribute="leading" secondItem="uSo-k7-i7n" secondAttribute="leading" constant="20" id="APk-cz-rQW"/>
+                <constraint firstAttribute="trailing" secondItem="gXG-kd-E3M" secondAttribute="trailing" constant="20" id="Rvq-oH-AiK"/>
+                <constraint firstAttribute="bottom" secondItem="gXG-kd-E3M" secondAttribute="bottom" constant="40" id="gRW-R2-h4s"/>
+            </constraints>
+            <connections>
+                <outlet property="bgView" destination="gXG-kd-E3M" id="Fom-tj-L8D"/>
+                <outlet property="countryTable" destination="4vj-Uz-Lpa" id="UaZ-zs-foe"/>
+                <outlet property="searchBar" destination="RM5-sh-j6K" id="hfB-ta-LYI"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="137.5"/>
+        </view>
+    </objects>
+</document>
